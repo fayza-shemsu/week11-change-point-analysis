@@ -1,23 +1,20 @@
+# Change Point Analysis of Brent Oil Prices
 
-# Week 11: Change Point Analysis of Brent Oil Prices
+## Objective
+Analyze historical Brent oil prices to detect structural changes using
+statistical tests and Bayesian change point modeling.
 
-## Overview
-This repository contains the interim submission for the Week 11 challenge: detecting structural breaks in Brent oil prices using Bayesian change point modeling.
+## Methods
+- Exploratory Data Analysis (EDA)
+- Stationarity testing (ADF, KPSS)
+- Log return transformation
+- Bayesian MAP-based change point detection
 
-## Repository Structure
-- `data/`  
-  Contains the raw Brent oil price dataset (`brentoilprices.csv`) and curated major events dataset (`oil_market_events.csv`).
+## Structure
+- `notebooks/`: Analysis notebooks
+- `src/`: Reusable Python modules
+- `reports/figures/`: Saved plots for reporting
 
-- `notebooks/`  
-  Includes exploratory data analysis (EDA) notebook:  
-  `01_eda_and_data_understanding.ipynb`
-
-- `reports/`  
-  Contains the interim report:  
-  `interim_report.md` describing workflow, event research, and time series understanding.
-
-## Purpose
-The repository demonstrates:
-- Professional data science workflow planning
-- Event research for contextual insights
-- Exploratory analysis to inform Bayesian change point modeling
+## Notes
+Due to computational constraints, Bayesian MAP estimation was used instead of
+full MCMC sampling for change point detection.
