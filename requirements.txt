@@ -1,0 +1,6 @@
+pymc
+arviz
+numpy
+pandas
+matplotlib
+statsmodels
